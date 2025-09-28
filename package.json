@@ -1,0 +1,32 @@
+{
+  "name": "@kodai-yamamoto-siw/workspace-launch-ui",
+  "version": "0.1.0",
+  "description": "Workspace launch helpers for Docusaurus docs",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@kodai-yamamoto-siw/workspace-template-generator": "github:Kodai-Yamamoto-SIW/workspace-template-generator",
+    "clsx": "^2.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "typescript": "~5.6.2"
+  }
+}
