@@ -16,7 +16,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@kodai-yamamoto-siw/workspace-template-generator": "github:Kodai-Yamamoto-SIW/workspace-template-generator",
